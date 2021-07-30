@@ -1,5 +1,6 @@
 # Currency-Api
-## To run
+At this point this is a quick minimal implementation implementation of an API to compute currency exchange rates. 
+## To Run
 The dockerfile hasn't been verified yet. During the process of checking it out my Docker Desktop had a catostrophic error so I'll complete the docker piece after I debug my Docker Desktop.
 
 In the meantime you can run the api in Visual Code by by doing the following:
@@ -21,9 +22,9 @@ In the meantime you can run the api in Visual Code by by doing the following:
 
 ## End Points
 
-localhost:/convert/<from_currency>/<to_currency>
+     localhost:/convert/<from_currency>/<to_currency>
 give the exchange rate from the <from_currency> to the <to_currency>
 
-localhost:/rates
+     localhost:/rates
 List the rates relative to USD for all the currencies available from (https://freecurrencyapi.net/api/v1/rates?base_currency=USD)
 
