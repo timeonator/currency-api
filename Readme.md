@@ -1,6 +1,11 @@
 # Currency-Api
 At this point this is a quick minimal implementation implementation of an API to compute currency exchange rates. 
 ## To Run
+### Run with docker compose
+From the root directory 
+
+     docker compose up
+
 ### Run From a bash CLI
 
     # Open a bash terminal and clone the git repository
