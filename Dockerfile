@@ -1,10 +1,13 @@
-FROM python:3.9.0a3-alpine3.10
+# syntax=docker/dockerfile:1
+
+FROM python:3.9.6-buster
 
 WORKDIR /usr/src/app
 
-COPY requirements.txt ./
+COPY . .
+
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
-EXPOSE 5000:5000
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+#
+
+CMD [ "python", "-m", "flask", "run", "--host=0.0.0.0"]
