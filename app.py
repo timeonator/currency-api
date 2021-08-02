@@ -44,4 +44,6 @@ def rate_view():
         rates.status_code,
     )
     response.headers["Content-Type"] = "application/json"
-    return response        
+    return response
+
+ 
